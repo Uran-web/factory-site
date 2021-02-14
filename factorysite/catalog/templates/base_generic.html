@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    {% block title %}<title>Vacancies page</title>{% endblock %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Добавление дополнительного статического CSS файла -->
+    <link rel="stylesheet" href="{% static '../static/css/style_details.css' %}">
+</head>
+
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <nav class="nav" id="nav">
+                <a class="nav__link" id="nav__main" href="#" data-scroll="#header">Головна</a>
+                <a class="nav__link" data-scroll="#galary__link">Галерея</a>
+                <a class="nav__link" data-scroll="#intro__link">Виробництво</a>
+                <a class="nav__link" data-scroll="#intro__link">Контакти</a>
+                <a class="nav__link" target="_blank" href="{% url 'vacancy' %}">Вакансії</a>
+            </nav>
+
+            <button class="burger" type="button" id="navToggle">
+                <span class="burger__item">Menu</span>
+            </button>
+
+            <div class="header__logo">
+                <a href="{% url 'index' %}">
+                    <img src="{% static 'img/new_logo.jpg' %}" alt="Korovaevo">
+                </a>
+
+            </div>
+        </div>
+    </div>
+</header> <!-- End of header -->
+
+<div class="vacancy-desc">
+    {% block content %}{% endblock %}
+</div>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__wrap">
+        <div class="footer__wrap-nav">
+            <div class="footer__nav">
+                <a class="refer-to" href="{% url 'index' %}">Головна</a>
+                <a class="refer-to" href="{% url 'index' %}">Хлібзаводи</a>
+                <a class="refer-to" href="{% url 'index' %}">Галерея</a>
+                <a class="refer-to" href="{% url 'vacancy' %}">Вакансії</a>
+                <a class="refer-to" href="#nav__main">.pdf-каталог</a>
+            </div>
+        </div>
+        <div class="footer__logo">
+            <a href="{% url 'index' %}"><img src="{% static 'img/new_logo.jpg' %}" alt="Korovaevo"></a>
+            <div class="copyright-text">
+                <p id="text">2021</p>
+                <p id="text">Всі права захищені &copy;</p>
+            </div>
+        </div>
+        <div class="footer__wrap-contacts">
+            <div class="footer__contacts">
+                <a class="refer-to" href="#nav__main">Політика конфіденційності</a>
+                <a class="refer-to" href="{% url 'index' %}">Зворотній зв’язок</a>
+                <a class="refer-to" href="{% url 'index' %}">Електронна пошта</a>
+                <a class="refer-to" href="{% url 'index' %}">Контакти «Короваєво»</a>
+                <a class="refer-to" href="{% url 'index' %}">Показати всі телефони</a>
+            </div>
+        </div>
+    </div>
+</footer><!-- End of footer section -->
+
+<!-- JS -->
+<script src="{% static 'js/appStatic.js' %}"></script>
+
+</body>
+</html>

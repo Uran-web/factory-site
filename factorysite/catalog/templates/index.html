@@ -1,0 +1,321 @@
+<!doctype html>
+{% load static %}
+<html lang=en>
+    
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <title>Короваево</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>   
+    <!-- Body -->
+<body>
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <nav class="nav" id="nav">
+                <a class="nav__link" id="nav__main" href="#" data-scroll="#header">Головна</a>
+                <a class="nav__link" data-scroll="#galary__link">Галерея</a>
+                <a class="nav__link" data-scroll="#intro__link">Виробництво</a>
+                <a class="nav__link" data-scroll="#intro__link">Контакти</a>
+                <a class="nav__link" target="_blank" href="{% url 'vacancy' %}">Вакансії</a>
+            </nav>
+            
+            <button class="burger" type="button" id="navToggle">
+                <span class="burger__item">Menu</span>
+            </button>
+                    
+            <div class="header__logo">
+                <img src="{% static 'img/new_logo.jpg' %}" alt="Korovaevo">
+            </div>
+        </div>
+    </div>
+</header> <!-- End of header -->
+
+<!-- Main part -->
+
+<!-- Title -->
+<div class="title" id="title">
+    <div class="title-container">
+        <div class="title__block">
+            <h1 class="main__title">Хлібозаводи "Короваєво"</h1>
+            <p class="for__title">Якісні традиції хлібного виробництва</p>
+        </div>
+        <p class="title__color"></p>
+    </div>
+</div> <!-- Title end -->
+
+    
+<!-- Block intro -->
+<div class="intro" id="intro__link">
+    <!-- Slider -->
+    <div id="reviewsSlider">
+        <!--Item 1-->
+        <div class="slick-item">
+            <div class="intro__item">
+                <div class="intro__description">
+                    <h3>Бахмут</h3>
+                    <p class="intro__desc">ТОВ "Бахмут-Хліб" м. Бахмут, вул. Соборна 14</p>
+                    <ul id="list-phone">
+                        <li>Приймальня: +38(062)744-17-89</li>
+                        <li>Кол-центр:  +38(095)290-02-04, 
+                            +38(063)069-28-63</li>
+                    </ul>
+                    <div class="button-map" type="button">
+                        <a id="btn" target="_blank" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1291.0956041895495!2d38.00259231305751!3d48.59579188588646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77e8bdb5957e5720!2sDelicious%20bread!5e0!3m2!1sru!2sua!4v1607605439321!5m2!1sru!2sua">На мапі</a>
+                    </div>
+                    <div class="img-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2638.7254653660425!2d38.00267544794358!3d48.59595522339798!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1609098119766!5m2!1sru!2sua" width="150" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                
+                <div class="intro__item-map">
+                    <div class="backmut-map">
+                        <iframe id="1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1291.0956041895495!2d38.00259231305751!3d48.59579188588646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77e8bdb5957e5720!2sDelicious%20bread!5e0!3m2!1sru!2sua!4v1607605439321!5m2!1sru!2sua" width="380" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>    <!-- End item 1 -->
+        
+        <!-- Item 2 -->
+        <div class="slick-item">
+            <div class="intro__item">
+                <div class="intro__description">
+                    <h3>Харків</h3>
+                    <p class="intro__desc">ТДВ "Салтівський Хлібозавод"    61153, вул. Гвардейців-Широнинців 1</p>
+                    <ul id="list-phone">
+                        <li>Приймальня: +38(057) 717–03–95</li>
+                        <li>Відділ кадрів: +38(057) 717–03–96</li>
+                        <li>Кол-центр:  +38(096)425-35-44, +38(097)506-19-68,
+                            +38(050)482-76-87, +38(050)407-89-08, +38(099)725-36-42, +38(99)725-36-52, +38(057)717-03-97, +38(057)717-03-98
+                        </li>
+                        <li>Горяча лінія: 0-800-400-002</li>
+                        <li>Приймання замовлень з 10:00 до 20:30 щоденно без вихідних</li>
+                    </ul>
+                    <div class="button-map" type="button">
+                        <a id="btn" target="_blank" href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1282.6611980786877!2d36.3279089!3d49.9865648!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270a188f10e80b%3A0xea5da3f40fc08005!2z0KHQsNC70YLQvtCy0YHQutC40Lkg0YXQu9C10LHQvtC30LDQstC-0LQ!5e0!3m2!1sru!2sua!4v1607598845138!5m2!1sru!2sua">На мапі</a>
+                    </div>
+                    <div class="img-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1282.6611980786877!2d36.3279089!3d49.9865648!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270a188f10e80b%3A0xea5da3f40fc08005!2z0KHQsNC70YLQvtCy0YHQutC40Lkg0YXQu9C10LHQvtC30LDQstC-0LQ!5e0!3m2!1sru!2sua!4v1607598845138!5m2!1sru!2sua" width="150" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                
+                <div class="intro__item-map">
+                    <div class="backmut-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1282.6611980786877!2d36.3279089!3d49.9865648!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41270a188f10e80b%3A0xea5da3f40fc08005!2z0KHQsNC70YLQvtCy0YHQutC40Lkg0YXQu9C10LHQvtC30LDQstC-0LQ!5e0!3m2!1sru!2sua!4v1607598845138!5m2!1sru!2sua" width="380" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>    <!-- End item 2 -->
+        
+        <!-- Item 3 -->
+        <div class="slick-item">
+            <div class="intro__item">
+                <div class="intro__description">
+                    <h3>Полтава</h3>
+                    <p class="intro__desc">ТОВ "ПолтаваХліб-3"    м. Полтава вул. Комарова 10а</p>
+                    <ul id="list-phone">
+                        <li>Приймальня: +38(053)259-87-60</li>
+                        <li>Бухгалтерія: +38(053)259-87-52</li>
+                        <li>Кол-центр:  +38(053)259-87-46, +38(053)259-87-56,
+                            +38(050)324-44-30, +38(050)346-93-96, +38(050)304-74-91, +38(095)730-47-04, +38(099)145-98-43, +38(067)530-41-46
+                        </li>
+                        <li>Горяча лінія: 0-800-400-120</li>
+                        <li>Приймання замовлень з 11:00 до 19:00 щоденно без вихідних</li>
+                    </ul>
+                    
+                    <!-- Media views-->
+                    <div class="button-map" type="button">
+                        <a id="btn" target="_blank" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2160.7656657907523!2d34.501384363918454!3d49.55590497602026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82ed90e335bf1%3A0x9d44e04cae1f0d9e!2zMTBBLCDRg9C7LiDQmtC-0LzQsNGA0L7QstCwLCAxMNCQLCDQn9C-0LvRgtCw0LLQsCwg0J_QvtC70YLQsNCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDM2MDAw!5e0!3m2!1sru!2sua!4v1607602091860!5m2!1sru!2sua">На мапі</a>
+                    </div><!-- End Media views-->
+                    <div class="img-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2160.7656657907523!2d34.501384363918454!3d49.55590497602026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82ed90e335bf1%3A0x9d44e04cae1f0d9e!2zMTBBLCDRg9C7LiDQmtC-0LzQsNGA0L7QstCwLCAxMNCQLCDQn9C-0LvRgtCw0LLQsCwg0J_QvtC70YLQsNCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDM2MDAw!5e0!3m2!1sru!2sua!4v1607602091860!5m2!1sru!2sua" width="150" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                
+                <div class="intro__item-map">
+                    <div class="backmut-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2160.7656657907523!2d34.501384363918454!3d49.55590497602026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82ed90e335bf1%3A0x9d44e04cae1f0d9e!2zMTBBLCDRg9C7LiDQmtC-0LzQsNGA0L7QstCwLCAxMNCQLCDQn9C-0LvRgtCw0LLQsCwg0J_QvtC70YLQsNCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDM2MDAw!5e0!3m2!1sru!2sua!4v1607602091860!5m2!1sru!2sua" width="380" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End of item 3 -->
+        
+        <!-- Item 4 -->
+         <div class="slick-item">
+            <div class="intro__item">
+                <div class="intro__description">
+                    <h3>Кременчуг</h3>
+                    <p class="intro__desc">ТОВ "Кременчуцький хлібокомбинат"    м. Кременчуг вул. Миколи Кучмы 2</p>
+                    <ul id="list-phone">
+                        <li>Приймальня:    +38(05366)3-30-79</li>
+                        <li>Відділ кадрів: +38(05366)3-51-57</li>
+                        <li>Кол-центр:  +38(099)416-72-83, +38(095)797-65-91,
+                            +38(067)530-37-79
+                        </li>
+                        <li>Горяча лінія: 0-800-400-002</li>
+                        <li>Приймання замовлень з 11:00 до 19:00 щоденно без вихідних</li>
+                    </ul>
+                    <div class="button-map" type="button">
+                        <a id="btn" target="_blank" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d578.0876440405045!2d33.42657493199994!3d49.0612829233487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d753398bc300d3%3A0x6fa709bf2352c3e5!2sKorovaevo!5e0!3m2!1sru!2sua!4v1607602550826!5m2!1sru!2sua">На мапі</a>
+                    </div>
+                    <div class="img-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d578.0876440405045!2d33.42657493199994!3d49.0612829233487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d753398bc300d3%3A0x6fa709bf2352c3e5!2sKorovaevo!5e0!3m2!1sru!2sua!4v1607602550826!5m2!1sru!2sua" width="150" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                
+                <div class="intro__item-map">
+                    <div class="backmut-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d578.0876440405045!2d33.42657493199994!3d49.0612829233487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d753398bc300d3%3A0x6fa709bf2352c3e5!2sKorovaevo!5e0!3m2!1sru!2sua!4v1607602550826!5m2!1sru!2sua" width="380" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>    <!--End of item 4-->
+        
+        <!-- Item 5 -->
+        <div class="slick-item">
+            <div class="intro__item">
+                <div class="intro__description">
+                    <h3>Кропивницький</h3>
+                    <p class="intro__desc">ТОВ "КировоградХліб 2014" 	  м. Кропивницький вул. Олега Паршутина 20</p>
+                    <ul id="list-phone">
+                        <li>Приймальня:    +38(052)256-72-00</li>
+                        <li>Відділ кадрів: +38(052)256-90-35</li>
+                        <li>Кол-центр:  +38(052)256-31-51, +38(052)227-01-23,
+                            +38(050)487-23-82, +38(050)487-50-91, +38(067)233-21-29
+                        </li>
+                        <li>Приймання замовлень з 11:00 до 19:00 щоденно без вихідних</li>
+                    </ul>
+                    <div class="button-map" type="button">
+                        <a id="btn" target="_blank" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d578.0876440405045!2d33.42657493199994!3d49.0612829233487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d753398bc300d3%3A0x6fa709bf2352c3e5!2sKorovaevo!5e0!3m2!1sru!2sua!4v1607602550826!5m2!1sru!2sua">На мапі</a>
+                    </div>
+                    <div class="img-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d578.0876440405045!2d33.42657493199994!3d49.0612829233487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d753398bc300d3%3A0x6fa709bf2352c3e5!2sKorovaevo!5e0!3m2!1sru!2sua!4v1607602550826!5m2!1sru!2sua" width="150" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                
+                <div class="intro__item-map">
+                    <div class="backmut-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d578.0876440405045!2d33.42657493199994!3d49.0612829233487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d753398bc300d3%3A0x6fa709bf2352c3e5!2sKorovaevo!5e0!3m2!1sru!2sua!4v1607602550826!5m2!1sru!2sua" width="380" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End of item 5 -->
+    </div> <!-- End of slider -->
+    
+    <!-- Car photo -->
+    <div class="intro__item-1">
+        <div class="intro__photo">
+            <img class="intro__photo-decor" src="{% static 'img/main-section-car-bg.jpg' %}" alt="">
+        </div>
+    </div>   <!-- End car photo --> 
+</div> <!-- End of intro -->
+
+<!-- galary -->    
+<div class="galary" id="galary__link">
+    <!-- Galary-slider -->
+    <div id="galarySlider">
+        
+        <!-- Picture 1 -->
+        <div class="galary__pict1">
+            <img src="{% static 'img/galary-1.jpg' %}" alt="">
+            <div class="galary__text-in">
+                <h4>Використовуємо тільки якісну сировину</h4>
+                <p>Кожен наш постачальник є прикладом якості і працездатності</p>
+            </div>
+            
+        </div>
+        
+        <!-- Picture 2 -->
+        <div class="galary__pict2">
+            <img src="{% static 'img/chleb.png' %}" alt="">
+            <div class="galary__text-in">
+                <h4>Продукція наших виробництв</h4>
+                <p>Якість підтверждена довірою споживачів та багаторічним досвідом виробництва хлібних биробів</p>
+            </div>
+        </div>
+        
+    </div> <!-- End of galary slider -->
+</div>
+    
+<!-- Inform section -->
+<div class="inform">
+    <div class="wrapper">
+        <div id="text-inform">Завод виробляє більше <br>100 видів продукції,<br> кондитерських виробів та хліба</div>
+        <div id="text-add">Завантажте каталог для ознайомлення з асортиментом, або зверніться до кол-центру заводу у Вашій області.</div>
+    </div>
+    
+    <div class="inform__circle">
+       <div class="wrapper-circle">
+           <div class="circle circle__blue">
+               <div class="circle__blue-border">
+                   <div class="circle__blue-border__num">2</div>
+                   <div class="circle__blue-border__text">млн.</div>
+               </div>
+               <p class="circle__blue-desc">Хлібобулочних вироба щодоби</p>
+           </div>
+           
+           <div class="circle circle__yellow">
+               <div class="circle__yellow-border">
+                   <div class="circle__yellow-border__num">352</div>
+                   <div class="circle__yellow-border__text">населиних пункти</div>
+               </div>
+               <p class="circle__yellow-desc">Довіряють нам випікати надсмачний хліб на Україні</p>
+           </div>
+           
+           <div class="circle circle__white">
+               <div class="circle__white-border">
+                   <div class="circle__white-border__num">247</div>
+                   <div class="circle__white-border__text">автомобілів</div>
+               </div>
+               <p class="circle__white-desc">Два рази на добу доставляють хліб до Вашої крамниці</p>
+           </div>
+       </div>
+    </div>
+</div><!-- End of inform -->
+    
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__wrap">
+        <div class="footer__wrap-nav">
+            <div class="footer__nav">
+                <a class="refer-to" href="#nav__main">Головна</a>
+                <a class="refer-to" href="#intro__link">Хлібзаводи</a>
+                <a class="refer-to" href="#galary__link">Галерея</a>
+                <a class="refer-to" href="{% url 'vacancy' %}">Вакансії</a>
+                <a class="refer-to" href="#nav__main">.pdf-каталог</a>
+            </div>
+        </div>
+        <div class="footer__logo">
+            <a><img src="{% static 'img/new_logo.jpg' %}" alt="Korovaevo"></a>
+            <div class="copyright-text">
+                <p id="text">2021</p>
+                <p id="text">Всі права захищені &copy;</p>
+            </div>
+        </div>
+        <div class="footer__wrap-contacts">
+            <div class="footer__contacts">
+                <a class="refer-to" href="#nav__main">Політика конфіденційності</a>
+                <a class="refer-to" href="#intro__link">Зворотній зв’язок</a>
+                <a class="refer-to" href="#galary__link">Електронна пошта</a>
+                <a class="refer-to" href="#nav__main">Контакти «Короваєво»</a>
+                <a class="refer-to" href="#nav__main">Показати всі телефони</a>
+            </div>
+        </div>
+    </div>
+</footer><!-- End of footer section -->
+    
+<!-- JavaScript -->
+    
+<script src="../static/css/app.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+</body>
+</html>

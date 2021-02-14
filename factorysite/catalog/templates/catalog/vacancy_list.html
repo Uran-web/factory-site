@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static '../static/css/list.css' %}">
+{% block content %}
+    <h1>Доступні вакансії</h1>
+
+    {% if vacancy_list %}
+    <ul class="vac-list">
+
+      {% for vacancy in vacancy_list %}
+      <li>
+        <a href="{{ vacancy.get_absolute_url }}">{{ vacancy.name }}</a> ({{vacancy.location}})
+      </li>
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>There are no vacancies.</p>
+    {% endif %}
+{% endblock %}
